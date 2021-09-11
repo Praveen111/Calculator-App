@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Calculator-App';
+  title = 'calculator-app';
+
+  // ngOnChanges(changes:SimpleChanges) {
+  //   console.log("CHANGES APP",changes);
+  // }
+  onOperationDone(val:any) {
+    console.log("On Done",val);
+  }
 }

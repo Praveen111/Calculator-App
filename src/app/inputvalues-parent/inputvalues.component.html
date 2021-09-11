@@ -1,0 +1,64 @@
+<!-- <p>inputvalues works!</p> -->
+
+<!-- <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Clearable input</mat-label>
+    <input matInput type="text" [(ngModel)]="value">
+    <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field> -->
+
+  <!-- <div>
+      <input type="text" [(ngModel)]="value" />
+      {{value}}
+  </div> -->
+
+  <!-- <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="value" focus>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form> -->
+  <div>
+      <div class="input-form">
+        <mat-form-field appearance="fill" class="input-field">
+            <mat-label>Number 1</mat-label>
+            <input matInput type="number" [(ngModel)]="value1"/>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Number 2</mat-label>
+            <input matInput type="number" [(ngModel)]="value2" class="input-field" />
+          </mat-form-field>
+      </div>
+      <!-- #ops - local variable accessing -->
+      <!-- <section class="operations">
+        <div class="example-button-row">
+          <button mat-stroked-button color="primary" (click)="ops.onAdd()">Add</button>
+          <button mat-stroked-button color="primary" (click)="ops.onSubtract()">Subtract</button>
+          <button mat-stroked-button color="primary" (click)="ops.onMultiply()">Multiply</button>
+          <button mat-stroked-button color="primary" (click)="ops.onDivide()">Divide</button>
+          <button mat-stroked-button color="primary" (click)="ops.onReset()">Reset</button>
+        </div>
+       
+      </section> -->
+      <!-- ------------------------------------------------------------------- -->
+      <!-- Calling Child methods via @viewChild() -->
+      <!-- <section class="operations">
+        <div class="example-button-row">
+          <button mat-stroked-button color="primary" (click)="onAdd()">Add</button>
+          <button mat-stroked-button color="primary" (click)="onSubtract()">Subtract</button>
+          <button mat-stroked-button color="primary" (click)="onMultiply()">Multiply</button>
+          <button mat-stroked-button color="primary" (click)="onDivide()">Divide</button>
+          <button mat-stroked-button color="primary" (click)="onReset()">Reset</button>
+        </div>
+       
+      </section> -->
+      <!-- Accessing Child Variables/methods in parent -->
+      <!-- #ops - acts as local variable (Parent accessing child methods and variables) -->
+      <app-operations [value1]="value1" [value2]="value2" (done)="onOperationDone($event)" #ops></app-operations>
+  </div>

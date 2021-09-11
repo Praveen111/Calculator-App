@@ -1,0 +1,26 @@
+.operations {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.example-button-row {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background: #e2dadd;
+}
+
+.result {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 24px;
+    padding: 12px;
+    text-align: center;
+    background: #e2dadd
+}

@@ -1,0 +1,15 @@
+
+<section class="operations">
+  <div class="example-button-row">
+    <button mat-stroked-button color="primary" (click)="onAdd()">Add</button>
+    <button mat-stroked-button color="primary" (click)="onSubtract()">Subtract</button>
+    <button mat-stroked-button color="primary" (click)="onMultiply()">Multiply</button>
+    <button mat-stroked-button color="primary" (click)="onDivide()">Divide</button>
+    <button mat-stroked-button color="primary" (click)="onReset()">Reset</button>
+  </div>
+ 
+</section>
+<div *ngIf="result && value1 >= 0 && value2 >=0" class="result">
+    Result : {{result}}
+</div>
+

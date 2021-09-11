@@ -1,0 +1,15 @@
+
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+} 
+
+.operations {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
